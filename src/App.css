@@ -1,0 +1,474 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6,p,span{
+    line-height: 0.8px;
+}
+
+.container{
+    width: 1166px;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: "poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+    line-height: 150%;
+}
+
+.pera{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: hsla(197, 28%, 17%, 0.55);
+    line-height: 30px;
+}
+
+.sub_title{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF7527;
+    padding-bottom: 8px;
+}
+/* common css end */
+
+/* navbar css start */
+#navbar{
+    width: 100%;
+    padding-top: 50px;
+    background-color: #EEEDDE;
+}
+
+#navbar nav{
+    display: flex;
+    align-items: center;
+}
+
+#navbar .brand_logo{
+    width: 20%;
+}
+#navbar .nav_items{
+    width: 80%;
+}
+
+#navbar .nav_items ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar .nav_items ul li{
+    padding-right: 50px;
+    padding-left: 50px;
+
+}
+
+#navbar .nav_items ul li:nth-child(4){
+    padding-right: 0;
+}
+
+
+#navbar .nav_items ul li a{
+
+    font-size: 16px;
+    font-weight: 300;
+    color: #203239;
+    transition: .4s;
+    position: relative;
+    /* width: 50px; */
+}
+
+
+
+
+#navbar .nav_items ul li a::after {
+    content: "";
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  #navbar .nav_items ul li a:hover {
+    font-weight: 600;
+    transition: 0.4s;
+  }
+   /* navbar css end */
+
+   /* banner css start */
+#banner{
+    padding-top: 96px;
+    padding-bottom: 120px;
+    background-color:#EEEDDE;
+}
+#banner .banner_warpper{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+#banner .banner_info .title{
+    font-size: 56px;
+    width: 777px;
+}
+
+#banner .banner_info .pera{
+    margin-top: 24px;
+    margin-bottom: 55px;
+    width: 544px;
+}
+
+
+#banner .banner_info .search_box{
+    display: flex;
+    column-gap: 15px;
+    position: relative;
+
+}
+#banner .banner_info .search_box input{
+    width: 508px;
+    border-radius: 15px;
+    border: none;
+    padding-left:50px  ;
+    outline: none;
+}
+#banner .banner_info .search_box input::placeholder{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1f31378c;
+}
+#banner .banner_info .search_box button {
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+#banner .banner_info .search_box button a{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1f31378c;
+    padding: 23px 41px;
+
+}
+
+#banner .banner_info .search_icon{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%) ;
+}
+
+   /* banner css end */
+
+   /* property part start */
+   #property{
+    padding: 100px 0;
+    background-color: #fff;
+   }
+
+   #property .title{
+    width: 533px;
+    margin-bottom: 64px;
+   }
+
+   #property .item{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 20px 33px;
+    position: relative;
+
+   }
+
+   #property .item:hover{
+    border-color:#EEEDDE ;
+   }
+   #property .item .item_title{
+    display: flex;
+    justify-content: space-between;
+   }
+   #property .item h6{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #203239;
+
+   }
+
+   #property .item .item_title p{
+    color: #FF7527;
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+   }
+
+   #property .property_item{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   #property .item::after{
+    content: "";
+    border: 3px solid #FF7527;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+   }
+#property .item .pera{
+    margin-top: 8px;
+    margin-bottom: 48px;
+}
+
+#property .item:nth-child(2) .pera{
+    margin-bottom: 78px;
+}
+
+#property .item button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#property .item button a{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #203239;
+}
+
+   /* property part end */
+
+/* favorit css start */
+#konsumen{
+    padding: 68px 0;
+    background-color:#EEEDDE;
+}
+#konsumen .favorit_warpper{
+    display: flex;
+    column-gap: 258px;
+    align-items: center;
+}
+#konsumen  .section_title .title{
+    padding-top: 8px;
+    padding-bottom: 68px;
+}
+ .favorit_img{
+    display: flex;
+    position: relative;
+    padding-bottom: 110px;
+}
+
+
+
+.favorit_img .img_two{
+    position: absolute;
+    top: 20%;
+    left: 14%;
+}
+
+#konsumen .favorit_info .pera{
+    margin-top: 24px;
+    margin-bottom: 59px;
+}
+#konsumen .favorit_info .btn button{
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid #203239;
+    transition: .4s;
+    
+}
+
+#konsumen .favorit_info .btn button:first-child{
+    margin-right: 48px;
+}
+
+
+#konsumen .favorit_info .btn button a span{
+    padding-right: 12px;
+}
+#konsumen .favorit_info .btn button a{
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #203239;
+    padding: 13px 41px;
+    transition: .4s;
+
+}
+#konsumen .favorit_info .btn button:hover{
+    background-color: #203239;
+}
+#konsumen .favorit_info .btn button a:hover{
+    color: #fff;
+}
+/* favorit css end */
+
+/* berbagai css start */
+
+#berbagai{
+    background-color: #ffff;
+    padding: 68px 0;
+}
+
+#berbagai .berbagai_card .card_info .info_title{
+    font-family: "poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #203239;
+}
+
+
+#berbagai .berbagai_card .card_info .pera{
+    width: 356px;
+}
+
+#berbagai .berbagai_card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+#berbagai .berbagai_card .item{
+    cursor: pointer;
+    transition: all linear .4s;
+}
+#berbagai .berbagai_card .item:hover img{
+    border-radius: 10px;
+} 
+/* berbagai css end */
+
+/*  kami css start */
+#kami{
+    background-color: #EEEDDE;
+}
+#kami .main{
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0;
+}
+#kami .card_item{
+    display: flex;
+    column-gap: 24px;
+    margin-top: 74px;
+
+}
+#kami .contact_card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 41px 15px;
+}
+#kami .contact_card .card_info{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+#kami .contact_card .card_info .icon{
+    font-size: 34px;
+}
+
+#kami .contact_card .card_info div p:first-child{
+    font-family: "poppins", serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #203239;
+    padding-bottom: 16px;
+}
+#kami .contact_card .card_info div p:last-child{
+    font-family: "poppins", serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 8px;
+    color: #203239;
+}
+#kami .contact_card .btn{
+    margin: 27px 42px 0px 42px;
+}
+#kami .contact_card .btn button{
+    background-color: #203239;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: .4s;
+}
+#kami .contact_card .btn button:hover{
+    background-color: transparent;
+    border: 1px solid #203239;
+}
+#kami .contact_card .btn button a{
+    padding: 10px 17px;
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: .4s;
+
+}
+
+#kami .contact_card .btn button a:hover{
+    color: #203239;
+}
+
+
+#kami .main .footer_right{
+padding-top: 40px;
+}
+
+#kami .main .footer_right .title{
+margin-bottom: 69px;
+}
+
+/* kami css end */
+
+/* footer css start */
+footer{
+    background-color: #203239;
+}
+
+footer .footer_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer_item img{
+    padding: 31px 0;
+}
+
+
+footer .footer_item .social_icon ul {
+    display: flex;
+    column-gap: 64px;
+    padding: 40px 0;
+}
+
+footer .footer_item .social_icon ul li a{
+    font-size: 24px;
+    color: #fff;
+}
+
+
+/* footer css end */
